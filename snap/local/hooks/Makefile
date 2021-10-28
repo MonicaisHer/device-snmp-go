@@ -14,4 +14,4 @@ cmd/install/install:
 
 clean:
 	rm -f $(HOOKS)
-
+	

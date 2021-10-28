@@ -5,11 +5,9 @@ adopt-info: device-snmp
 summary: Connect data snmp to EdgeX using device-snmp reference Device Service
 title: EdgeX snmp Device Service
 description: |
-  The official reference EdgeX device-snmp Device Service built using the 
-  device-sdk-go to interact with snmp brokers. 
-  Initially the daemon in the snap is disabled - a device profile must be
-  provisioned externally with core-metadata or provided to device-snmp inside
-  "$SNAP_DATA/config/device-snmp/res" before starting.
+  This device service provides network switches configuration, sending and 
+  receiving event readings from switches. Currently, this device service 
+  is tailored specifically to the TrendNET TEG-082WS switch.
 
 # TODO: add armhf when the project supports this
 architectures:
@@ -53,7 +51,6 @@ plugs:
     target: $SNAP_DATA/config/device-snmp/res
 
 parts:
-
   hooks:
     source: snap/local/hooks
     plugin: make
