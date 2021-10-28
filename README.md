@@ -57,6 +57,17 @@ As a general practice I routinely remove my docker volumes.   For more informati
 > Note:  docker-compose.yml is going to be the latest release version of the edgex-foundry project.  
 > For future versions please use the docker-compose-delhi-0.7.1.yml file
 
+### Running the device-snmp Service as a Snap
+The device service is also available as a snap. Install the snap with the following command:
+
+```
+$ sudo snap install edgex-device-snmp
+```
+
+For more details on the Device SNMP Snap, including installation, configuration, please refer to [EdgeX SNMP Device Service Snap](https://github.com/edgexfoundry/device-snmp-go/tree/main/snap)
+
+For more details on Snap, including EdgeX Snap, viewing logs, security services, please check [Getting Started with Snap](https://docs.edgexfoundry.org/2.0/getting-started/Ch-GettingStartedSnapUsers/)
+
 
 #### GET calls (REST)
 For device service get calls we will use our configured static IP address for our network card.  You can find this by executing the following:
