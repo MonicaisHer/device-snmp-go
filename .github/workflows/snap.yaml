@@ -28,3 +28,4 @@ jobs:
           name: device-snmp
           snap: ${{needs.build.outputs.snap}}
 
+
